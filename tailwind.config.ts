@@ -14,16 +14,12 @@ const config = {
     container: {
       center: true,
       padding: {
-        DEFAULT: "1rem",
-        sm: "1rem",
-        lg: "6rem",
-        xl: "8rem",
-        "2xl": "10rem",
+        DEFAULT: "3rem",
+        sm: "3rem",
+        lg: "4rem",
+        xl: "5rem",
+        "2xl": "6rem",
       },
-      // screens: {
-      //   xl: "1400px",
-      //   "2xl": "1400px",
-      // },
     },
     extend: {
       colors: {
@@ -67,6 +63,7 @@ const config = {
         sm: "calc(var(--radius) - 4px)",
       },
       fontFamily: {
+        raleway: ["var(--font-raleway)", ...fontFamily.sans],
         sans: ["var(--font-sans)", ...fontFamily.sans],
       },
       keyframes: {

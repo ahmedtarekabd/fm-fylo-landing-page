@@ -1,41 +1,24 @@
 import {
   NavigationMenu,
-  NavigationMenuContent,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-  NavigationMenuTrigger,
-  navigationMenuTriggerStyle,
 } from "./ui/navigation-menu";
-import {
-  Drawer,
-  DrawerClose,
-  DrawerContent,
-  DrawerDescription,
-  DrawerFooter,
-  DrawerHeader,
-  DrawerTitle,
-  DrawerTrigger,
-} from "@/components/ui/drawer";
 import logo from "@/public/assets/images/logo.svg";
-import MenuOpen from "@/public/assets/images/icon-menu.svg";
-import MenuClose from "@/public/assets/images/icon-menu-close.svg";
 import Image from "next/image";
-import { Button } from "./ui/button";
 import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <NavigationMenu className="py-10 justify-between items-center">
+    <NavigationMenu className="container py-6 justify-between items-center">
       <NavigationMenuList>
         <NavigationMenuItem className="flex items-center gap-2">
-          <Image priority src={logo} className="w-12" alt="Logo" />
-          Fylo
+          <Image priority src={logo} className="w-32" alt="Logo" />
         </NavigationMenuItem>
       </NavigationMenuList>
       <NavigationMenuList>
         <NavigationMenuItem>
-          
+          <NavbarList />
         </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>
@@ -44,30 +27,24 @@ const Navbar = () => {
 
 const NavbarList = () => {
   return (
-    <NavigationMenuList className="flex flex-col items-start md:flex-row">
-      <NavigationMenuItem className="p-2 py-4 text-xl font-medium md:font-light">
-        <Link href="/" legacyBehavior passHref>
-          <NavigationMenuLink>Home</NavigationMenuLink>
+    <NavigationMenuList>
+      <NavigationMenuItem className="p-2 py-4 font-light md:text-lg">
+        <Link href="/features" legacyBehavior passHref>
+          <NavigationMenuLink>
+            Features
+          </NavigationMenuLink>
         </Link>
       </NavigationMenuItem>
-      <NavigationMenuItem className="p-2 py-4 text-xl font-medium md:font-light">
-        <Link href="/new" legacyBehavior passHref>
-          <NavigationMenuLink>New</NavigationMenuLink>
+      <NavigationMenuItem className="p-2 py-4 font-light md:text-lg">
+        <Link href="/team" legacyBehavior passHref>
+          <NavigationMenuLink>Team</NavigationMenuLink>
         </Link>
       </NavigationMenuItem>
-      <NavigationMenuItem className="p-2 py-4 text-xl font-medium md:font-light">
-        <Link href="/popular" legacyBehavior passHref>
-          <NavigationMenuLink>Popular</NavigationMenuLink>
-        </Link>
-      </NavigationMenuItem>
-      <NavigationMenuItem className="p-2 py-4 text-xl font-medium md:font-light">
-        <Link href="/trending" legacyBehavior passHref>
-          <NavigationMenuLink>Trending</NavigationMenuLink>
-        </Link>
-      </NavigationMenuItem>
-      <NavigationMenuItem className="p-2 py-4 text-xl font-medium md:font-light">
-        <Link href="/categories" legacyBehavior passHref>
-          <NavigationMenuLink>Categories</NavigationMenuLink>
+      <NavigationMenuItem className="p-2 py-4 font-light md:text-lg">
+        <Link href="/signin" legacyBehavior passHref>
+          <NavigationMenuLink>
+            Sign In
+          </NavigationMenuLink>
         </Link>
       </NavigationMenuItem>
     </NavigationMenuList>
