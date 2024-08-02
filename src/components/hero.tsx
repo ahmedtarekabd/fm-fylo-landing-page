@@ -4,7 +4,7 @@ import heroBG from "@/public/assets/images/bg-curvy-mobile.svg";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col text-center items-center justify-center gap-8 mx-auto max-w-[600px]">
+    <div className="flex flex-col text-center items-center justify-center gap-8 mx-auto max-w-[600px] my-8">
       <Image
         src="/assets/images/illustration-intro.png"
         alt="Hero image"
