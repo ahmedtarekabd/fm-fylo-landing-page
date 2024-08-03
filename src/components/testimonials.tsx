@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Testimonials = () => {
   return (
-    <div className="flex flex-col lg:flex-row gap-8 my-20 relative">
+    <div className="flex flex-col lg:flex-row gap-8 mt-20 mx-10 relative">
       <div className="absolute -top-8 -left-2 -z-10">
         <Image
           src="/assets/images/bg-quotes.png"
