@@ -10,7 +10,7 @@ const Feature = ({
   description: string;
 }) => {
   return (
-    <div className="flex flex-col items-center gap-8 p-8 max-w-[500px] mx-auto">
+    <div className="flex flex-col items-center gap-8 lg:p-8 max-w-[500px] mx-auto">
       <Image src={icon} alt={title} width={64} height={64} />
       <div className="space-y-4 text-center">
         <h2 className="text-2xl font-bold">{title}</h2>
