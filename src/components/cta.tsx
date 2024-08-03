@@ -5,7 +5,7 @@ import { Separator } from "./ui/separator";
 
 const Cta = () => {
   return (
-    <div className="flex flex-col lg:flex-row items-center justify-center gap-10 my-10">
+    <div className="flex flex-col lg:flex-row items-center justify-center gap-10 my-20">
       <Image
         src="/assets/images/illustration-stay-productive.png"
         alt="Stay productive illustration"
