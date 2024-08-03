@@ -13,7 +13,7 @@ type TestimonialProps = {
 
 const Testimonial = ({ text, author }: TestimonialProps) => {
   return (
-    <Card className="border-0">
+    <Card>
       <CardContent className="p-6">
         <p className="text-sm font-light leading-relaxed">{text}</p>
       </CardContent>

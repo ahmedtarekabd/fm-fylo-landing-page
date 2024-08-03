@@ -14,9 +14,9 @@ const Cta = () => {
         height={0}
       />
       <div className="space-y-4">
-        <h3 className="font-semibold text-2xl">
+        <h2 className="font-semibold text-2xl">
           Stay productive, wherever you are
-        </h3>
+        </h2>
         <p>
           Never let location be an issue when accessing your files. Fylo has you
           covered for all of your file storage needs.
